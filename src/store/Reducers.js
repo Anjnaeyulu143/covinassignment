@@ -5,8 +5,8 @@ import { listUsers, userDetail, userId } from "./Actions"
 const initialState = {
     usersList : [],
     isLoading : true,
-    filteredId : 1,
-    userDetails:[]
+    filteredId : '',
+    userDetails:[],
 }
 
 export const usersReducer = (state=initialState,{type,payload}) => {

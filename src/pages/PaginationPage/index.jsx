@@ -5,7 +5,7 @@ import { uniqueId } from '../../store/Actions';
 
 export const PaginationPage = ({setShowCard}) => {
 
-  const [pageId,setPageId] = useState(1)
+  const [pageId,setPageId] = useState('')
   const usersList = useSelector(state => state.usersList)
   const dispatch = useDispatch()
 
@@ -23,7 +23,7 @@ export const PaginationPage = ({setShowCard}) => {
         display: "flex",
         justifyContent:"center",
     }}
-    color = "secondary"
+    color = "primary"
     onChange={(_,value) => {
         setPageId(value);
         setShowCard(false)
